@@ -3,9 +3,9 @@ import requests
 
 base_url = "https://api.trello.com/1/{}"
 auth_params = {
-    'key': "82d0a920ee5747c53c845a352ae4d964",
-    'token': "b9dd880f608b855a5240dac8357e80f6d70b9e717c237d00d16590b71b6dbeda", }
-board_id = "60255c5510396663defb3dbc"
+    'key': "",
+    'token': "", }
+board_id = ""
 response = requests.get(base_url.format('boards/' + board_id), params=auth_params).json()
 
 
